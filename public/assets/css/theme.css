@@ -57,7 +57,7 @@
 
 body {
   margin: 0;
-  font-family: "CookieRun", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "CookieRun";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -18358,6 +18358,7 @@ label {
   height: 100vh;
   background-color: #161616;
   transition: 1s;
+  font-family: "Comfortaa";
 }
 
 .logo-header {
