@@ -28,3 +28,17 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     })
 })
+
+function copy1ST() {
+    navigator.clipboard.writeText("1ST.SKYLAKE.MOE");
+}
+
+function copyMC1() {
+    navigator.clipboard.writeText("MC1.SKYLAKE.MOE");
+    document.getElementById("MC1").innerHTML = "복사 완료!";
+}
+
+function copyMC2() {
+    navigator.clipboard.writeText("MC2.SKYLAKE.MOE");
+    document.getElementById("MC2").innerHTML = "복사 완료!";
+}
