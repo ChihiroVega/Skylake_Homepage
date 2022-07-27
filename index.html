@@ -54,6 +54,10 @@
     </div>
 
     <!-- navbar -->
+    <nav class="announcement">
+      <a><img src="public\assets\img\favicons\caution-sign32.png" alt="공지사항 : ">&nbsp;&nbsp;스카이레이크 서버 주소가 변경됩니다. 자세한 내용은  <a href="https://twitter.com/Skylake_dev/status/1552312330662264834">여기를 클릭해주세요.</a></a>
+    </nav>
+
     <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -268,47 +272,30 @@
     <section id="ServerAddress" class="mt-4">
       <div class="container-lg">
         <div class="text-center">
-          <p class="fs-2 ls-2">3가지 서버가 있어요!</p>
+          <p class="fs-2 ls-2">두가지 서버가 있어요!</p>
           <h1 class="display-4 fw-semi-bold">스카이레이크 서버 목록</h1>
         </div>
         <div class="row mt-5">
           <div class="col-sm-9 col-md-4 gy-4">
-            <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-900 plans-cards">
-              <p class="fs-2 ls-2">1ST</p>
-              <h1 class="display-4 ls-3"><span class="text-600"></span>첫번째</h1>
-              <h1 class="display-4 ls-3"><span class="text-600"></span>이야기</h1>
-              <p class="fs-0">우여곡절 끝에 만들어진 레이크의 첫번째 서버</p>
+            <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-800 plans-cards">
+              <p class="fs-2 ls-2">MC1.SKYLAKE.ONE</p>
+              <h1 class="display-4 ls-3"><span class="text-600"></span>MC1</h1>
+              <h1 class="display-4 ls-3"><span class="text-600"></span>주력서버</h1>
+              <p class="fs-0">스카이레이크 주력 마인크래프트 서버</p>
               <hr class="hr mt-6 text-1000" />
               <ul class="mt-5 ps-0">
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>1.16 -> 1.17.1 JAVA (자바) 에디션</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>2021년 2월 4일, 처음으로 운영 시작</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>많은 분 덕분에 많이 발전한 서버에요</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>1.19 JAVA (자바) 에디션</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>서버 시작일자 2022-07-23</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>스카이레이크 주력 반야생 서버입니다!</li>
                 <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>※ 화이트리스트 활성화 되어있어요!</li>
                 <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>※ 접속 전 관리자 연락 필수!</li>
               </ul>
-              <button onclick="" class="btn btn-warning mt-4">새단장 중!</button>
+              <button id="MC1" onclick="copyMC1()" class="btn btn-gray mt-4">MC1.SKYLAKE.ONE</button>
             </div>
           </div>
           <div class="col-sm-9 col-md-4 gy-4">
             <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-800 plans-cards">
-              <p class="fs-2 ls-2">MC1</p>
-              <h1 class="display-4 ls-3"><span class="text-600"></span>반야생</h1>
-              <h1 class="display-4 ls-3"><span class="text-600"></span>메인서버</h1>
-              <p class="fs-0">레이크 서버 중 가장 인기가 많아요!</p>
-              <hr class="hr mt-6 text-1000" />
-              <ul class="mt-5 ps-0">
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>1.18.2 JAVA (자바) 에디션</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>레이크의 주력 마인크래프트 서버에요!</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>현재 레이크 서버에서 인기가 많아요!</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>서버 테러로 인해 잠시 화이트리스트 적용중</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>기본적인 규칙은 지켜주세요 :D 약속!</li>
-              </ul>
-              <button id="MC1" onclick="copyMC1()" class="btn btn-gray mt-4">MC1.SKYLAKE.MOE</button>
-            </div>
-          </div>
-          <div class="col-sm-9 col-md-4 gy-4">
-            <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-800 plans-cards">
-              <p class="fs-2 ls-2">MC2</p>
+              <p class="fs-2 ls-2">MC2.SKYLAKE.ONE</p>
               <h1 class="display-4 ls-3"><span class="text-600"></span>크리에이티브</h1>
               <h1 class="display-4 ls-3"><span class="text-600"></span>건축서버</h1>
               <p class="fs-0">반야생 서버만 있으면 아쉽잖아요</p>
@@ -316,11 +303,28 @@
               <ul class="mt-5 ps-0">
                 <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>1.18.2 JAVA (자바) 에디션</li>
                 <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>당신이 건축서버에 바라는 모든 것</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>그래서 크리에이티브 서버도 준비했어요 </li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>서버 테러로 인해 잠시 화이트리스트 적용중</li>
-                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>기본적인 규칙은 지켜주세요 :D 약속!</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>그래서 크리에이티브 서버도 준비했어요</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>※ 화이트리스트 활성화 되어있어요!</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>※ 접속 전 관리자 연락 필수!<!</li>
               </ul>
-              <button id="MC2" onclick="copyMC2()" class="btn btn-gray mt-4">MC2.SKYLAKE.MOE</button>
+              <button id="MC2" onclick="copyMC2()" class="btn btn-gray mt-4">MC2.SKYLAKE.ONE</button>
+            </div>
+          </div>
+          <div class="col-sm-9 col-md-4 gy-4">
+            <div class="py-5 px-4 px-md-3 px-lg-4 rounded-1 bg-900 plans-cards">
+              <p class="fs-2 ls-2">UNDER CONSTRUCTION</p>
+              <h1 class="display-4 ls-3"><span class="text-600"></span>서버</h1>
+              <h1 class="display-4 ls-3"><span class="text-600"></span>준비중</h1>
+              <p class="fs-0">서버 공사중!</p>
+              <hr class="hr mt-6 text-1000" />
+              <ul class="mt-5 ps-0">
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>이 서버는</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>어떻게 운영할지</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>고민중이에요 </li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>좋은 아이디어 있으시면</li>
+                <li class="pricing-lists"><i class="fas fa-check-circle fa-lg me-2 text-600"></i>말씀해주세요!!</li>
+              </ul>
+              <button onclick="" class="btn btn-warning mt-4">새단장 중!</button>
             </div>
           </div>
         </div>
