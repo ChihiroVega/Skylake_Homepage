@@ -55,6 +55,18 @@
     }
   }
   
+  .announcement {
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    color: black;
+    background-color: #fffc44;
+  }
+  
+  .announcement.caution {
+    size: 32px;
+  }
+
   body {
     margin: 0;
     font-family: 'SUIT', sans-serif;
