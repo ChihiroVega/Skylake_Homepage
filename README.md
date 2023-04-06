@@ -1,2 +1,3 @@
-# Skylake.moe
-Skylake.moe website
+# Skylake.one
+Skylake.one website
+Skylake Server
